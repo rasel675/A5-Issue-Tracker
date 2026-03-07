@@ -12,5 +12,6 @@
     }
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') handleLogin();
+      if (e.key === 'Enter') 
+        handleLogin();
     });
