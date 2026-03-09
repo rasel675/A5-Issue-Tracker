@@ -32,7 +32,9 @@ const--->
 
     The spread operator (...) is used to expand an array or object into individual elements or properties. It allows you to copy, merge, or pass items to functions without changing the original data.
 
-    
+   Example:   const arr1 = [1, 2, 3];
+              const arr2 = [...arr1, 4, 5];   // output: [1, 2, 3, 4, 5]
+           
 
 
     - 3️⃣ What is the difference between map(), filter(), and forEach()?
@@ -45,6 +47,26 @@ const--->
 
 > forEach() just runs a function on each item, it does not make a new array.
 
+   Example:
+   
+const numbers = [1, 2, 3, 4];
+
+const doubled = numbers.map(n => n * 2);
+// map() - Returns new array, original unchanged
+console.log(doubled); 
+//output: [2, 4, 6, 8]
+console.log(numbers);
+ //output: [1, 2, 3, 4] (original unchanged)
+
+
+const evens = numbers.filter(n => n % 2 === 0); 
+// filter() - Returns new array with matching items
+console.log(evens); 
+// output: [2, 4]
+
+numbers.forEach(n => console.log(n)); 
+// forEach() - Returns nothing, just loops
+// Output: 1 2 3 4
 
 
 
@@ -52,10 +74,10 @@ const--->
    
    Answer:
 
->  An arrow function is a shorter way to write a function in JavaScript, introduced in ES6. It uses the `=>`   syntax instead of the `function` keyword.
+>  An arrow function is a shorter way to write a function in JavaScript, introduced in ES6. It uses the `=>`syntax instead of the `function` keyword.
 
    Example:      const sum = (a, b) => a + b;
-                 // It’s a short way to write a function in one line.
+                 // It’s a short way to write a function.
                  console.log(sum(2, 3)); 
 
                  output : 5
